@@ -24,8 +24,8 @@ class AmbulanceBookingSystem:
         print("\n--- Active Bookings ---")
         for booking in self.bookings:
             print(f"ID : {booking["id"]}, {booking["name"]} {booking["surname"]}"
-                  f"Phone : {booking["phone"]}, Location: {booking["location"]}"
-                  f"Emergency type : {booking["emergency_type"]}")
+                  f" Phone : {booking["phone"]}, Location: {booking["location"]}"
+                  f" Emergency type : {booking["emergency_type"]}")
     def cancel_booking(self,ambulance_id):
         for booking in self.bookings:
             if booking["id"] == ambulance_id :
